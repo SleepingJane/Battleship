@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    justify-content: center;
+    
+    &__title {
+        font-family: $font-family-base;
+        text-transform: uppercase;
+        text-align: center;
+        color: burlywood;
+    }
+}

@@ -1,0 +1,7 @@
+include ../game-board/game-board
+
+mixin battleship(value)
+    .container
+        .battleship
+            +game-board()
+            #move.battleship__progress  Здесь будут ходы...

@@ -1,6 +1,9 @@
 //- Используем стандартный шаблон
 extends ../layouts/default/default
+include ../components/user-data/user-data
 
 //- Выводим контент
 block content
-    | Index content
+    .container
+        .mt-lg-4
+            +user-data()

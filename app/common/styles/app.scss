@@ -2,17 +2,26 @@
 // @import "../../../node_modules/**/*.css";
 
 // Variables
-@import 'variables/colors';
-@import 'variables/measures';
-@import 'variables/typography';
+@import "variables/colors";
+@import "variables/measures";
+@import "variables/typography";
+@import "variables/grid";
 
-// // Core styles
-@import 'core/fonts';
-@import 'core/base';
-@import 'core/typography';
+//helpers
+@import "helpers/sprites";
+@import "helpers/bootstrap";
 
-// Pages
+// Core styles
+@import "core/fonts";
+@import "core/base";
+@import "core/typography";
+
 
 // Components
 @import '../../components/header/header';
 @import '../../components/footer/footer';
+@import '../../components/button/button';
+@import '../../components/user-data/user-data';
+@import '../../components/input-text/input-text';
+@import '../../components/game-board/game-board';
+@import '../../components/battleship/battleship';

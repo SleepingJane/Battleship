@@ -1,0 +1,29 @@
+.game-board {
+    display: flex;
+    justify-content: center;
+
+    &__user {
+        float: left; 
+        margin-left: 60px;
+    }
+
+    &__pc {
+        float: right; 
+        margin-right: 26px;
+    }
+
+    &__user-img,
+    &__pc-img {
+        width: 366px; 
+        height: 363px;
+    }
+    
+    [data-hidden="true"] {
+        display:none;
+    }
+
+    [data-hidden="false"], 
+    .block {
+        display:block;
+    }
+}
