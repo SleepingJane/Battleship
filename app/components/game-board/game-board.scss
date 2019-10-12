@@ -1,14 +1,25 @@
 .game-board {
     display: flex;
     justify-content: center;
+    
+    &__user-img,
+    &__pc-img{
+        margin-right: 30px;
+
+        > img {
+            position: absolute;
+            width: 330px;
+            margin-top: -24px;
+            margin-left: 5px;
+        }
+    }
 
     &__user-board,
     &__pc-board {
         width: 305px; 
         height: 305px; 
         float: left; 
-        margin: 15px; 
-        border: 2px solid darkblue;
+        z-index: 1;
 
         > div {
             width: 30px; 
