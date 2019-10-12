@@ -2,11 +2,8 @@ include ../input-text/input-text
 include ../battleship/battleship
 
 mixin user-data
-    #hideContent.user-data
-        label(for='user-name').user-data__title Введите данные пользователя
-        .user-data__name
-            +input-text()(name='user-name' value='' placeholder='Введите имя')
-            input#start.button.button--start(type='submit' value='Начать игру')
-
-    #showContent.start
-        +battleship(name)
+    label(for='user-name').user-data__title Введите данные пользователя
+    .user-data__name.js-data-user
+        form.user-data__user.js-data-form
+            +input-text()
+            input.button.button--start.js-start(type='submit' value='Начать игру')

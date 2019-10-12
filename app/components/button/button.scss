@@ -8,17 +8,25 @@
     cursor: pointer;
     font-family: $font-family-base;
 
-    &:hover {
-        color: blue;
-    }
-
     &--start {
         padding: 10px;
         margin-top: 10px;
-        color: darkorchid;
+        color: color("white");
+        background-color: color("blue");
+
+        text-transform: uppercase;
         width: 100%;
         border: 1px solid rgba(18, 110, 203, 0.5);
         border-radius: 4px;
-        background-color: color('white');
+        transition: opacity $animation-time;
+        transition: background-color $animation-time;
+
+        &:active {
+            opacity: 0.7;
+        }
+
+        &:hover {
+            background-color: color("dark-blue");
+        }
     }
 }

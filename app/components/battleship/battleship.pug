@@ -1,7 +1,12 @@
 include ../game-board/game-board
 
-mixin battleship(value)
+mixin battleship()
     .container
-        .battleship
-            +game-board()
-            #move.battleship__progress  Здесь будут ходы...
+        .col-xs-12
+            .battleship.js-battleship
+                +game-board()
+                .battleship__progress.js-move 
+                    | Добро пожаловать!<br>На левой части экрана изображено твоё поле, в правой части -
+                    | игровое поле твоего соперника. Синим цветом изображены целые корабли, красным цветом - потопленные или раненые. 
+                    | Серыми квадратами обозначены промахи. Твоя задача найти и уничтожить корабли соперника как можно скорее.
+                    | <br>Удачной игры!<br><br>

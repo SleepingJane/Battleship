@@ -1,6 +1,10 @@
 $colors: (
     'black': #000,
-    'white': #fff
+    'white': #fff,
+    'red': #f32929,
+    'blue': #87CEEB,
+    'dark-blue': #2b0294,
+    'grey': #CDC9C9,
 );
 
 @function color($color) {
