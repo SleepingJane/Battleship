@@ -1,9 +1,8 @@
 include ../input-text/input-text
-include ../battleship/battleship
 
 mixin user-data
     label(for='user-name').user-data__title Введите данные пользователя
     .user-data__name.js-data-user
-        form.user-data__user.js-data-form
+        form.user-data.js-data-form
             +input-text()
             input.button.button--start.js-start(type='submit' value='Начать игру')

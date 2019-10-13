@@ -8,7 +8,7 @@ class Battleship {
         this.initBoard();
         this.startGame();
     }
-
+    
     initBoard() {
         this.userBoard = ['0110000100','0000000000','0000100001','0100001001','0100001001',
                         '0100000000','0000000010','0000110000','0100000000','0000111100'];
@@ -84,8 +84,10 @@ function backfire() {
         if (targets.length === 0 || shot('pc', targets[Math.floor(Math.random() * targets.length)])) 
             break;
     }
-    if (document.querySelectorAll('.game-board__user-board .ship').length === 0) 
+    if (document.querySelectorAll('.game-board__user-board .ship').length === 0) {
         alert('Вы проиграли!');
+        return false;
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
