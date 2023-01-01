@@ -28,8 +28,8 @@
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-svg-sprite": "^1.5.0",
 		"gulp-svgmin": "^2.2.0",
-		"webpack": "^4.37.0",
-		"webpack-stream": "^5.2.1"
+		"webpack": "^5.75.0",
+		"webpack-stream": "^7.0.0"
 	},
 	"browserslist": [
 		"last 2 version"
